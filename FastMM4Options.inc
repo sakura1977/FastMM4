@@ -123,7 +123,7 @@ Set the default options for FastMM here.
  Very important: If you enable this option your application will require the
  FastMM_FullDebugMode.dll library. If this library is not available you will
  get an error on startup.}
-{.$define FullDebugMode}
+{$define FullDebugMode}
 
   {Set this option to perform "raw" stack traces, i.e. check all entries on the
    stack for valid return addresses. Note that this is significantly slower
@@ -218,7 +218,7 @@ Set the default options for FastMM here.
    report memory leaks. This option has no effect if the option
    "EnableMemoryLeakReporting" is not also set. Note that this option does not 
    work with libraries, only EXE projects.}
-  {$define RequireDebuggerPresenceForLeakReporting}
+  {.$define RequireDebuggerPresenceForLeakReporting}
 
   {Set this option to require the presence of debug info ($D+ option) in the
    compiled unit to perform memory leak checking. This option has no effect if
@@ -292,7 +292,7 @@ Set the default options for FastMM here.
  memory manager, memory leaks caused by the sharer will not be freed
  automatically. Take into account that statically linked DLLs are initialized
  before the main application, so set the sharing options accordingly.}
-{.$define AttemptToUseSharedMM}
+{$define AttemptToUseSharedMM}
 
 {Define this to enable backward compatibility for the memory manager sharing
  mechanism used by Delphi 2006 and 2007, as well as older FastMM versions.}

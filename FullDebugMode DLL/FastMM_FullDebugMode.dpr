@@ -93,7 +93,7 @@ const
   CReturnAddressCacheSize = 4096;
   {FastMM assumes a maximum of 256 characters per stack trace entry.  The address text and line break are in addition to
   the info text.}
-  CMaxInfoTextLength = 224;
+  CMaxInfoTextLength = 480;
 
 type
   {Return address info cache:  Maintains the source information for up to CReturnAddressCacheSize return addresses in
